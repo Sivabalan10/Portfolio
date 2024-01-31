@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
         <script src='https://kit.fontawesome.com/54a2c781b6.js' crossorigin='anonymous'></script> 
         <script src="script.js"></script>
         <title>Portfllio</title>
@@ -28,7 +31,7 @@
            <h3>Coding Engineer</h3>
            <p>Degree - BTech Artificial Intelligence and Machine Learning <br>(Second Year)</p>
            <a id = "res" href="Resume.pdf" download>Download My Resume</a>
-            </div><br><br>
+        </div><br><br>
            <h2>Aboutme</h2>
              <p id = "abt">Greetings! I am a tech-savvy individual passionate about turning ideas into reality. With a keen ability to learn and apply knowledge, I strive to integrate innovative solutions. My career aspiration is to be a dedicated problem solver, tackling challenges with creativity and expertise.</p>
        
@@ -61,16 +64,19 @@
             </article>
             </div>
             <br><br>
+            <div id = "respon"></div>
+            <div id="cot">
             <h2>Contact</h2>
-            <form>
+            <form action="https://sheetdb.io/api/v1/8xp94guqvexh8" method='post' id="formdata">
                 <label for = "name">Name</label>
-                <input type="text" id="name" placeholder="name"><br>
+                <input type="text" id="name" placeholder="name" name="data[name]"><br>
                 <label for = "abtu">About you</label>
-                <textarea type="text" id= "abtu" placeholder="about_you"></textarea><br>
+                <textarea type="text" id= "abtu" placeholder="about_you" name="data[aboutyou]"></textarea><br>
                 <label for = "msg">Message</label>
-                <textarea placeholder="Message" id = "msg"></textarea><br>
+                <textarea placeholder="Message" id = "msg" name="data[msg]"></textarea><br>
                 <input type = "submit" value="Send" id="submit">
             </form>
+        </div>
                 
         </main>
         <footer>
